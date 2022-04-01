@@ -119,7 +119,7 @@ async function insertLandmark(page, repetition) {
 //   doFocus (bool)        -- perform focusing tests?
 //   finderName (string)   -- pretty name
 //   finderPath (string)   -- path to built script file
-//   useHeuristics (bool)  -- employ guessing in the Finder?
+//   without (bool)        -- do NOT employ guessing in the Finder?
 
 async function doTimeLandmarksFinding(sites, loops, doScan, doFocus, without) {
 	await makeLandmarksFinders(true)
