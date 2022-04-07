@@ -168,7 +168,6 @@ function debugSend(what) {
 //
 
 function sendLandmarks() {
-	console.log('going to send:', landmarksFinder.allInfos())
 	browser.runtime.sendMessage({
 		name: 'landmarks',
 		data: landmarksFinder.allInfos()
